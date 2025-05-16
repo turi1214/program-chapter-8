@@ -1,0 +1,98 @@
+                 #chapter 8
+                 # exercise 8.1
+def display_message():
+    msg = "I'm learning to store code in functions."
+    print(msg)
+display_message() 
+               
+                 # exercise 8.2
+
+def favorite_book(title):
+    print(f"{title} is one of my favorite books.")
+favorite_book('The Abstract Wild')
+
+
+                 # exercise 8.3
+
+def make_shirt(size, message):
+    print(f"\nI'm going to make a {size} t-shirt.")
+    print(f'It will say, "{message}"')
+
+make_shirt('large', 'I love Python!')
+make_shirt(message="Readability counts.", size='medium') 
+
+
+                 # exercise 8.4
+
+def make_shirt(size='large', message='I love Python!'):
+    print(f"\nI'm going to make a {size} t-shirt.")
+    print(f'It will say, "{message}"')
+
+make_shirt()
+make_shirt(size='medium')
+make_shirt('small', 'Programmers are loopy.') 
+
+
+                # exercise 8.5
+
+def describe_city(city, country='chile'):
+    msg = f"{city.title()} is in {country.title()}."
+    print(msg)
+
+describe_city('santiago')
+describe_city('reykjavik', 'iceland')
+describe_city('punta arenas')
+
+
+                # exercise 8.6
+
+def city_country(city, country):
+    return f"{city.title()}, {country.title()}"
+
+city = city_country('santiago', 'chile')
+print(city)
+
+city = city_country('ushuaia', 'argentina')
+print(city)
+
+city = city_country('longyearbyen', 'svalbard')
+print(city)
+                
+             # exercise 8.7
+
+def make_album(artist, title):
+    album_dict = {
+        'artist': artist.title(),
+        'title': title.title(),
+        }
+    return album_dict
+
+album = make_album('metallica', 'ride the lightning')
+print(album)
+
+album = make_album('beethoven', 'ninth symphony')
+print(album)
+
+album = make_album('willie nelson', 'red-headed stranger')
+print(album)             
+         # exercise 8.8
+
+def show_messages(messages):
+    for message in messages:
+        print(message)
+
+messages = ["hello there", "how are u?", ":)"]
+show_messages(messages)         
+            # exercise 8.9
+
+def show_messages(messages):
+    for message in messages:
+        print(message)
+
+messages = ["hello there", "how are u?", ":)"]
+show_messages(messages)            
+ 
+ 
+
+ 
+
